@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">Add New Teacher</div>
+                        <div class="card-body">
+                                <form action="#">
+                                        <div class="form-group">
+                                            <label >Name</label>
+                                            <input type="text" class="form-control" id="name" placeholder="Enter Yourname">
+                                           
+                                        </div>
+            
+                                        <div class="form-group">
+                                            <label >Age</label>
+                                            <input type="text" class="form-control" id="age" placeholder="Enter Yourname">
+                                        
+                                        </div>
+                                        <button type="submit" class="btn btn-success btn-block " id="button">Add Information</button>
+                                    </form>
+                        </div>
+                       
+                    
+                </div>
+            </div>
+
+            <div class="col-8">
+
+                <div class="card">
+                    <div class="card-header">
+                        Teacher Info
+                    </div>
+                    <div class="card-body">
+                        
+                        <table class=" table table-borderes ">
+                            
+                                <thead >
+                                 <tr>
+                                    <th>Name</th>
+                                    <th>age</th>
+                                    <th>Action</th>
+                                </tr>  
+                                </thead>
+                            
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+
+
+
+<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD5CGBDPIvLMKVMSYX7YS3v00z2YkEtpro",
+    authDomain: "teacher-ee20a.firebaseapp.com",
+    databaseURL: "https://teacher-ee20a.firebaseio.com",
+    projectId: "teacher-ee20a",
+    storageBucket: "teacher-ee20a.appspot.com",
+    messagingSenderId: "825038907805",
+    appId: "1:825038907805:web:9dfd10a3a7eedc0ac8a774",
+    measurementId: "G-L9H2CHQPM3"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  var database = firebase.firestore();
+</script>
+    <script src="js/firebase.js"></script>
+</body>
+</html>
+
